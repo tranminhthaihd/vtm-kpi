@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>TMT KPI</title>
   <style>
     * { box-sizing: border-box; }
@@ -44,6 +47,7 @@
       background: #f5f5f5; border-radius: 6px;
       font-size: 10px; word-break: break-all; color: #333;
     }
+    .ver { margin-top: 12px; font-size: 11px; color: #999; }
   </style>
 </head>
 <body>
@@ -51,20 +55,31 @@
     <h1>TMT KPI</h1>
     <p>Ứng dụng đánh giá KPI cán bộ.<br>Bấm nút bên dưới để vào.</p>
 
-    <a class="btn" id="goApp"
-       href="https://script.google.com/macros/s/AKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA/exec">
-      Vào TMT KPI
-    </a>
-
-    <a class="btn2" id="goFix"
-       href="https://accounts.google.com/Logout?continue=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA%2Fexec">
-      Không vào được? Đăng xuất Google rồi vào lại
-    </a>
+    <a class="btn" id="goApp" href="#">Vào TMT KPI</a>
+    <a class="btn2" id="goFix" href="#">Không vào được? Đăng xuất Google rồi vào lại</a>
 
     <div class="hint">
       <b>Nếu báo “không thể mở tệp”:</b> máy đang mở nhiều Gmail — bấm nút thứ hai, hoặc cửa sổ ẩn danh / điện thoại chỉ 1 email.
-      <code>https://script.google.com/macros/s/AKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA/exec</code>
+      <code id="showUrl"></code>
     </div>
+    <div class="ver">landing v20260920c</div>
   </div>
+  <script>
+    // Deployment ID ghép từ đoạn cố định — tránh nhầm chữ I (hoa) với l (thường) khi sửa HTML.
+    var DEPLOY_ID = [
+      "AKfycbxceBcr",
+      "I",
+      "aG6CUxP8zScjqDhrff95Q63DA5QF",
+      "l",
+      "6c6_TtWG",
+      "l",
+      "iadsBoL4RFvn1qw_NGyhFzA"
+    ].join("");
+    var APP = "https://script.google.com/macros/s/" + DEPLOY_ID + "/exec";
+    document.getElementById("goApp").href = APP;
+    document.getElementById("goFix").href =
+      "https://accounts.google.com/Logout?continue=" + encodeURIComponent(APP);
+    document.getElementById("showUrl").textContent = APP;
+  </script>
 </body>
 </html>
