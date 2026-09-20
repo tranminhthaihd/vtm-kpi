@@ -2,5 +2,66 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbw0wHqG5KexfegZK2adU4Q29FO0NwgRXE8gGCzKlNuWxQ_L_-OmpY4v00ojhKE-_yo/exec">
-  <title>VTM KPI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMT KPI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+      background: #f0f4f1; color: #222;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .box {
+      background: #fff; max-width: 440px; width: 100%;
+      border-radius: 14px; padding: 32px 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    h1 { margin: 0 0 8px; font-size: 26px; color: #1a5c3a; }
+    p { margin: 0 0 14px; font-size: 14px; color: #555; line-height: 1.55; }
+    .btn {
+      display: block; width: 100%;
+      background: #1a5c3a; color: #fff; text-decoration: none;
+      font-weight: 700; font-size: 16px;
+      padding: 14px 18px; border-radius: 10px; margin: 10px 0;
+    }
+    .btn2 {
+      display: block; width: 100%;
+      background: #fff; color: #1a5c3a; text-decoration: none;
+      font-weight: 700; font-size: 14px;
+      padding: 12px 18px; border-radius: 10px; margin: 10px 0;
+      border: 2px solid #1a5c3a;
+    }
+    .hint {
+      margin-top: 18px; padding: 12px 14px;
+      background: #fff8e6; border-radius: 8px;
+      font-size: 13px; color: #664d03; text-align: left; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>TMT KPI</h1>
+    <p>Ứng dụng đánh giá KPI cán bộ.<br>Bấm nút bên dưới để vào.</p>
+
+    <!-- ĐỔI LINK NÀY khi Deploy ra URL mới (không có /u/0 hay /u/1) -->
+    <a class="btn" id="goApp"
+       href="https://script.google.com/macros/s/AKfycbw0wHqG5KexfegZK2adU4Q29FO0NwgRXE8gGCzKlNuWxQ_L_-OmpY4v00ojhKE-_yo/exec">
+      Vào TMT KPI
+    </a>
+
+    <a class="btn2" id="goFix"
+       href="https://accounts.google.com/Logout?continue=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbw0wHqG5KexfegZK2adU4Q29FO0NwgRXE8gGCzKlNuWxQ_L_-OmpY4v00ojhKE-_yo%2Fexec">
+      Không vào được? Đăng xuất Google rồi vào lại
+    </a>
+
+    <div class="hint">
+      <b>Nếu báo “không thể mở tệp”:</b><br>
+      Máy đang mở nhiều Gmail cùng lúc. Bấm nút vàng ở trên,
+      hoặc dùng <b>điện thoại</b> / máy chỉ có <b>một</b> email đơn vị.
+    </div>
+  </div>
+</body>
+</html>
