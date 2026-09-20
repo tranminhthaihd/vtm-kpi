@@ -14,7 +14,7 @@
       padding: 24px;
     }
     .box {
-      background: #fff; max-width: 440px; width: 100%;
+      background: #fff; max-width: 480px; width: 100%;
       border-radius: 14px; padding: 32px 28px;
       box-shadow: 0 6px 24px rgba(0,0,0,.08);
       text-align: center;
@@ -39,6 +39,11 @@
       background: #fff8e6; border-radius: 8px;
       font-size: 13px; color: #664d03; text-align: left; line-height: 1.5;
     }
+    code {
+      display: block; margin-top: 8px; padding: 8px;
+      background: #f5f5f5; border-radius: 6px;
+      font-size: 10px; word-break: break-all; color: #333;
+    }
   </style>
 </head>
 <body>
@@ -46,21 +51,19 @@
     <h1>TMT KPI</h1>
     <p>Ứng dụng đánh giá KPI cán bộ.<br>Bấm nút bên dưới để vào.</p>
 
-    <!-- ĐỔI LINK NÀY khi Deploy ra URL mới (không có /u/0 hay /u/1) -->
     <a class="btn" id="goApp"
-       href="https://script.google.com/macros/s/AKfycbxceBcrlaG6CUxP8zScjqDhrff95Q63DA5QFI6c6_TtWGIiadsBoL4RFvn1qw_NGyhFzA/exec">
+       href="https://script.google.com/macros/s/AKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA/exec">
       Vào TMT KPI
     </a>
 
     <a class="btn2" id="goFix"
-       href="https://accounts.google.com/Logout?continue=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxceBcrlaG6CUxP8zScjqDhrff95Q63DA5QFI6c6_TtWGIiadsBoL4RFvn1qw_NGyhFzA%2Fexec">
+       href="https://accounts.google.com/Logout?continue=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA%2Fexec">
       Không vào được? Đăng xuất Google rồi vào lại
     </a>
 
     <div class="hint">
-      <b>Nếu báo “không thể mở tệp”:</b><br>
-      Máy đang mở nhiều Gmail cùng lúc. Bấm nút vàng ở trên,
-      hoặc dùng <b>điện thoại</b> / máy chỉ có <b>một</b> email đơn vị.
+      <b>Nếu báo “không thể mở tệp”:</b> máy đang mở nhiều Gmail — bấm nút thứ hai, hoặc cửa sổ ẩn danh / điện thoại chỉ 1 email.
+      <code>https://script.google.com/macros/s/AKfycbxceBcrIaG6CUxP8zScjqDhrff95Q63DA5QFl6c6_TtWGliadsBoL4RFvn1qw_NGyhFzA/exec</code>
     </div>
   </div>
 </body>
